@@ -3,11 +3,21 @@ package com.ecommerce.microcommerce.model;
 public class Product {
     private int id;
     private String nom;
+    private String image;
     private int prix;
 
-    public Product(int id, String nom, int prix) {
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public Product(int id, String nom,String image, int prix) {
         this.id = id;
         this.nom = nom;
+        this.image = image;
         this.prix = prix;
     }
 
@@ -41,6 +51,7 @@ public class Product {
                 "id=" + id +
                 ", nom='" + nom + '\'' +
                 ", prix=" + prix +
+                ", image='" + image + '\'' +
                 '}';
     }
 }

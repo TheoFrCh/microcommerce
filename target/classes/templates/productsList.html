@@ -6,17 +6,19 @@
   <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
 </head>
 <body>
-<h1>Products List</h1>
+<h1>Les produits</h1>
 <br/><br/>
 <div>
   <table border="1">
     <tr>
       <th>Name</th>
       <th>Price</th>
+      <th>Image</th>
     </tr>
     <tr th:each ="product : ${listproducts}">
       <td th:utext="${product.nom}">...</td>
-      <td th:utext="${product.prix}">...</td>
+      <td th:utext="${product.prix}"> € </td>
+      <td><img th:src="${product.image}" th:width="100" th:height="100"/></td>
     </tr>
   </table>
 </div>
