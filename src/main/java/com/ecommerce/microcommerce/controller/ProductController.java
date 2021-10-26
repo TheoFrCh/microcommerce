@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
-@Controller//The answer will be Json
+@Controller
 public class ProductController {
 
     @Autowired //TODO C'est quoi ?

@@ -1,5 +1,4 @@
-package com.rent.rent.controller;
-
+package com.ecommerce.microcommerce.controller;
 
 import com.ecommerce.microcommerce.dao.ProductDao;
 import com.ecommerce.microcommerce.model.Product;

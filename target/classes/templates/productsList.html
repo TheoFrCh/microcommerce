@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -16,10 +15,11 @@
       <th>Price</th>
     </tr>
     <tr th:each ="product : ${listproducts}">
-      <td th:utext="${product.name}">...</td>
-      <td th:utext="${product.price}">...</td>
+      <td th:utext="${product.nom}">...</td>
+      <td th:utext="${product.prix}">...</td>
     </tr>
   </table>
 </div>
 </body>
 </html>
+
