@@ -7,7 +7,10 @@
 </head>
 <body>
 <h1>Les produits</h1>
-<br/><br/>
+<br/>
+<a th:href="@{/}">Maison</a>
+<br/>
+<br/>
 <div>
   <table border="1">
     <tr>
@@ -17,8 +20,8 @@
     </tr>
     <tr th:each ="product : ${listproducts}">
       <td th:utext="${product.nom}">...</td>
-      <td th:utext="${product.prix}"> € </td>
-      <td><img th:src="${product.image}" th:width="100" th:height="100"/></td>
+      <td th:utext="${product.prix}">...</td>
+      <td><a th:href="@{/product/{id}(id=${product.id})}"> <img th:src="${product.image}" th:width="100" th:height="100"/></a></td>
     </tr>
   </table>
 </div>
