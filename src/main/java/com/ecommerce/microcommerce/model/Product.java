@@ -6,6 +6,9 @@ public class Product {
     private String image;
     private int prix;
 
+    public Product() {
+    }
+
     public String getImage() {
         return image;
     }
