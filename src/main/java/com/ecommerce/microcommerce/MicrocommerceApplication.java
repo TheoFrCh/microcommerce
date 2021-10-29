@@ -2,15 +2,13 @@ package com.ecommerce.microcommerce;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-/*composante de 3 annotations : @Configuration , @EnableAutoConfiguration et @ComponentScan
-en resumé cela active l'auto-configuration*/
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
+@EnableSwagger2
 public class MicrocommerceApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MicrocommerceApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(MicrocommerceApplication.class, args);
+    }
 }

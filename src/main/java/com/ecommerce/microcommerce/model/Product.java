@@ -1,11 +1,18 @@
 package com.ecommerce.microcommerce.model;
 
+/**
+ * Product class which contain attributes :
+ * id (int) , nom (String) , image (String) , prix (int)
+ *
+ */
 public class Product {
+
     private int id;
     private String nom;
     private String image;
     private int prix;
 
+    //void constructor for the controller method add
     public Product() {
     }
 
