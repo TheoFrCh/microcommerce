@@ -1,0 +1,3 @@
+INSERT INTO Product VALUES(1,'ordinateur', 'https://gonzague.me/wp-content/uploads/2012/06/2439796349_56422d6e66.jpg', 130);
+INSERT INTO Product VALUES(2,'chien', 'https://img-0.journaldunet.com/hz2q3APruWLlwjl0xC8EDx81ek8=/1500x/smart/8aa4a11f17834775aa0ec7afcebecaea/ccmcms-jdn/2056563.jpg', 43);
+INSERT INTO Product VALUES(3,'oreiller', 'https://www.petiteamelie.fr/media/catalog/product/cache/9/thumbnail/1024x/85e4522595efc69f496374d01ef2bf13/o/r/oreiller-enfant-ensemble-couette-enfant.jpg', 12);

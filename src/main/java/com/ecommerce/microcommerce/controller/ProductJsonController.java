@@ -50,7 +50,7 @@ public class ProductJsonController {
         return productDao.delete(product);
     }
 
-    @PostMapping(value = "updateProduct/{id}")
+    @PostMapping(value = "updateProduct")
     public Product updateProduct(@RequestBody Product product){
          return productDao.update(product);
     }

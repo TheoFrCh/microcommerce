@@ -1,13 +1,21 @@
 package com.ecommerce.microcommerce.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * Product class which contain attributes :
  * id (int) , nom (String) , image (String) , prix (int)
  *
  */
+@Entity
 public class Product {
 
+    @Id
+    @GeneratedValue
     private int id;
+
     private String nom;
     private String image;
     private int prix;
