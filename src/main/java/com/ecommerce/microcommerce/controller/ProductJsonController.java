@@ -18,9 +18,7 @@ public class ProductJsonController {
 
     //Products
     @GetMapping(value = "products")
-    public List<Product> listproducts(){
-        return productDao.findAll();
-    }
+    public List<Product> listproducts(){ return productDao.findAll();}
 
     //Products/{id}
     @GetMapping(value = "products/{id}") //Call this methode only for a get request
@@ -44,15 +42,11 @@ public class ProductJsonController {
                 .toUri();
         return ResponseEntity.created(location).build();
     }
-    @DeleteMapping(value="/deleteProduct/{id}")
-    public Product deleteProduct(@PathVariable int id){
-        Product product = productDao.findById(id);
-        return productDao.delete(product);
-    }
 
-    @PostMapping(value = "updateProduct")
-    public Product updateProduct(@RequestBody Product product){
-         return productDao.update(product);
+
+    @GetMapping(value = "/product/{prixLimit}")
+    public List<Product> testDeRequetes(@PathVariable int prixLimit){
+        return productDao.findByPrixGreaterThan(prixLimit);
     }
 
 }
